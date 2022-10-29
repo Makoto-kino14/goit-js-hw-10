@@ -27,6 +27,7 @@ const inputHandler = event => {
         Notify.info(
           'Too many matches found. Please enter a more specific name'
         );
+        cleanMarkup(listEl);
         return;
       }
       renderMarkup(data);
