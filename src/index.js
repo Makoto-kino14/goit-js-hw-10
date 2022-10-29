@@ -11,8 +11,8 @@ const infoEl = document.querySelector('.country-info');
 
 const cleanMarkup = ref => (ref.innerHTML = '');
 
-const inputHandler = e => {
-  const textInput = e.target.value.trim();
+const inputHandler = event => {
+  const textInput = event.target.value.trim();
 
   if (!textInput) {
     cleanMarkup(listEl);
